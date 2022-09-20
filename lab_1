@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    float h, r, pi = 3.14, sbok, s, v;
+
+
+    do {
+        printf("\tEnter cylinder height: ");
+        scanf_s("%f", &h);
+    }
+
+    while (h <= 0);
+
+
+    do {
+        printf("\tEnter the radius of the cylinder: ");
+        scanf_s("%f", &r);
+    }
+    
+    while (r <= 0);
+
+
+    sbok = 2 * pi * r * h;
+    s = 2 * pi * r * (h + r); 
+    v = pi * (r * r) * h;  
+
+    printf("\n\t\tSbok = %.2f\n"
+        "\t\tS = %.2f\n"
+        "\t\tV = %.2f\n", sbok, s, v);
+
+    return 0;
+}
