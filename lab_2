@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+
+{
+	float a, b;
+
+	printf("Enter value a:");
+	scanf_s("%f", &a);
+	printf("Enter value b:");
+	scanf_s("%f", &b);
+
+	if (a == b)
+		printf("These numbers are equal");
+
+	if (a != b)
+		printf("These numbers are NOT equal");
+	return 0;
+}
