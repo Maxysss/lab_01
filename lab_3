@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+
+int main()
+{
+    int a, b, c;
+
+    printf("Enter value a:");
+    scanf_s("%d", &a);
+
+
+    printf("Enter value b:");
+    scanf_s("%d", &b);
+
+
+    printf("Enter value c:");
+    scanf_s("%d", &c);
+
+
+    if (a == -b || -a == b)
+        printf("%d", c);
+
+    else
+        if (b == -c || -b == c)
+        printf("%d", a);
+
+    else 
+        if (c == -a || a == -c)
+        printf("%d", b);
+
+    else
+        printf("No");
+
+    return 0;
+
+}
